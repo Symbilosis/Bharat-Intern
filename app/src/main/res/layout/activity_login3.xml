@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login3">
+
+    <ImageView
+        android:id="@+id/loginbtm"
+        android:layout_width="411dp"
+        android:layout_height="139dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:srcCompat="@drawable/waveimg" />
+
+    <EditText
+        android:id="@+id/EmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Password"
+        android:gravity="center"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailAddress" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="343dp"
+        android:layout_height="340dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailAddress"
+        app:srcCompat="@drawable/undraw_login_re_4vu2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Login"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="137dp"
+        android:layout_height="42dp"
+        android:background="@drawable/btn_primary"
+        android:text="Login"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/loginbtm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="212dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="12dp"
+        android:text="Don't Have An Account,Sign Up?"
+        app:layout_constraintBottom_toTopOf="@+id/loginbtm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

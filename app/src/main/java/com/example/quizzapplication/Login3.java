@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class Login3 extends AppCompatActivity {
 
     EditText Password,EmailAddress;
-    Button buttonlogin;
+    Button buttonlogin,buttonSignup;
     FirebaseAuth mAuth;
     TextView txt;
 
@@ -48,9 +48,10 @@ public class Login3 extends AppCompatActivity {
         EmailAddress = findViewById(R.id.EmailAddress);
         buttonlogin = findViewById(R.id.buttonlogin);
         txt = findViewById(R.id.txt);
+        buttonSignup = findViewById(R.id.buttonSignup);
 
 
-        txt.setOnClickListener(new View.OnClickListener() {
+        buttonSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Signup.class);
@@ -96,7 +97,7 @@ public class Login3 extends AppCompatActivity {
 
                                     Toast.makeText(getApplicationContext(), "Login Successful",Toast.LENGTH_SHORT);
 
-                                        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                                        Intent intent = new Intent(getApplicationContext(),LoginIntroduction.class);
                                         startActivity(intent);
                                         finish();
 

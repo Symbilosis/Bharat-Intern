@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/n1"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Profile" />
+
+
+
+        <item
+            android:id="@+id/n2"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="View Score" />
+
+
+        <item
+            android:id="@+id/n3"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="View Score" />
+
+
+        <item
+            android:id="@+id/n4"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Add Another Account" />
+
+        <item
+            android:id="@+id/n5"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Edit Personal Details" />
+
+
+        <item
+            android:id="@+id/n6"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Follow us" />
+
+
+        <item
+            android:id="@+id/n7"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Rate US"/>
+
+
+        <item
+            android:id="@+id/n8"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Log Out" />
+
+    </group>
+</menu>
